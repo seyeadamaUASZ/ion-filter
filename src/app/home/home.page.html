@@ -1,20 +1,16 @@
-<ion-header [translucent]="true">
+<ion-header>
   <ion-toolbar>
-    <ion-title>
-      Blank
-    </ion-title>
+  <ion-title>
+  Ionic Blank
+  </ion-title>
   </ion-toolbar>
-</ion-header>
-
-<ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">Blank</ion-title>
-    </ion-toolbar>
-  </ion-header>
-
-  <div id="container">
-    <strong>Ready to create an app?</strong>
-    <p>Start with Ionic <a target="_blank" rel="noopener noreferrer" href="https://ionicframework.com/docs/components">UI Components</a></p>
+ </ion-header>
+ <ion-content>
+  <div class="ion-padding">
+  <ion-button
+  (click)="download('https://41.214.74.215:8020/backenddpi/importation/downloadFile/DS20211103007','Demo PDF')"
+  >Click to View Doc</ion-button
+  >
+  <ion-button (click)="open('https://41.214.74.215:8020/backenddpi/importation/downloadFile/DS20211103007')">click other</ion-button>
   </div>
-</ion-content>
+ </ion-content>
